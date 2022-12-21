@@ -2,10 +2,10 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-size: 12px;
 }
 
-
-/* Tela para Celular */
+/* Configurações Inicial dispositivos pequenos */
 @media only screen
 {
     header{
@@ -15,13 +15,12 @@
         color: white;
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
     
         img{
-            height: 90px;
-            width: 100px;
-            margin-top: 10px;
-            margin-left: 5px;
+            height: 60px;
+            width: 70px;
+            margin-top: 35px;
+            margin-left: 10px;
         }
     
         nav{
@@ -30,17 +29,19 @@
             display: flex;
             flex-direction: row-reverse;
             align-items: center;
-            margin-right: 10px;
+
+        justify-content: space-evenly;
 
             ul{
                 display: flex;
                 flex-direction: row;
-                gap: 10px;
+                gap: 5px;
                 align-items: center;
         
                 li{
                     list-style: none;
                     a{
+                        font-size: 1.2rem;
                         color: white;
                         text-decoration: none;
                     }
@@ -48,39 +49,140 @@
             }
         }
     }
-
+    
     .home{
+        background-color: rgb(171, 196, 196);
         width: 100vw;
-        height: 105vh;
+        height: 50vh;
         display: flex;
-        justify-items: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        p{
+            font-size: 1.5rem;
+        }
+
+    }
+
+    .html5
+    {
+        background-color: rgb(235, 139, 15);
+        width: 100vw;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .img{
+            height: 50px;
+            width: 50px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        p{
+            font-size: 1.5rem;
+        }
+    }
+    
+    .css3
+    {
+        background-color: rgb(35, 120, 216);
+        width: 100vw;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .img{
+            height: 50px;
+            width: 50px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        p{
+            font-size: 1.5rem;
+        }
+    }
+
+    .jS
+    {
+        background-color: rgb(220, 255, 20);
+        width: 100vw;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img{
+            height: 50px;
+            width: 50px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        p{
+            font-size: 1.5rem;
+        }
+    }
+
+
+    .links{
+        width: 100vw;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+
+        img{
+            height: 50px;
+            width: 50px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        p{
+            font-size: 1.5rem;
+        }
+
+    }
+
+    .footer{
+        width: 100vw;
+        height: 10vh;
+        background-color: black;
+        color: #ffff;
+    
+
+        p{
+            font-size: 1.2rem;
+        }
 
     }
 }
 
-/*Tablet*/
-@media only screen and (min-width: 768px)
+/*Tablet e dispostivos até 900px*/
+@media only screen and(min-width: 600px)
 {
-    section
+    header
     {
         background-color: red;
     }
 }
 
 /* Computador */
-@media only screen and (min-width: 992px)
+@media only screen and (min-width: 1200px)
 {
-    section 
+    header
     {
         background-color: blue;
     }
 }
 
 /* Smart TV */
-@media only screen and (min-width: 1200px) 
+@media only screen and (min-width: 1800px) 
 {
-    section
+    header
     {
-        background-color: black;
+        background-color: rgb(92, 7, 35);
     }
 }

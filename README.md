@@ -7,7 +7,15 @@
 
 
 
-
+#
 <div>
-    <a href="#HTML">GIT</a>
+    <a href="https://github.com/users/Erysilva98/projects/3">QUADRO_GITHUB</a>
+</div>
+
+#
+
+#### Referências
+
+* <div>
+    <a href="https://www.alura.com.br/artigos/css-guia-do-flexbox">FlexBox</a>
 </div>
