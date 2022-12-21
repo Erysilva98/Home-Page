@@ -1,0 +1,86 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* Tela para Celular */
+@media only screen
+{
+    header{
+        width: 100vw;
+        height: 105px;
+        background-color: black;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    
+        img{
+            height: 90px;
+            width: 100px;
+            margin-top: 10px;
+            margin-left: 5px;
+        }
+    
+        nav{
+            width: 100vw;
+            height: 100px;
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            margin-right: 10px;
+
+            ul{
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+                align-items: center;
+        
+                li{
+                    list-style: none;
+                    a{
+                        color: white;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .home{
+        width: 100vw;
+        height: 105vh;
+        display: flex;
+        justify-items: center;
+
+    }
+}
+
+/*Tablet*/
+@media only screen and (min-width: 768px)
+{
+    section
+    {
+        background-color: red;
+    }
+}
+
+/* Computador */
+@media only screen and (min-width: 992px)
+{
+    section 
+    {
+        background-color: blue;
+    }
+}
+
+/* Smart TV */
+@media only screen and (min-width: 1200px) 
+{
+    section
+    {
+        background-color: black;
+    }
+}
