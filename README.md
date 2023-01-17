@@ -6,6 +6,18 @@
 
 
 
+Devices with frames no google chrome:
+Moto G4
+Nexus 5X
+Nexus 6P
+Nest Hub
+Nest Hub Max
+iPhone 5/SE
+iPhone 6/7/8
+iPhone 6/7/8 Plus
+iPad
+
+
 
 #
 <div>

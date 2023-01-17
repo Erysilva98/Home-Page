@@ -1,188 +1,119 @@
+// Cores
+
+$htmlColor1: #e44d26;
+$htmlColor2: #f16529;
+$cssColor1: #264de4;
+$cssColor2: #2965f1;
+$jsColor1: #e5a228;
+$jsColor2: #f1bf26;
+$black: #111111;
+$white: #ffffff;
+
+
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
     font-size: 12px;
 }
+
+/*
+xs: 0,        //Smartphones em modo retrato
+sm: 576px,    //Smartphones em modo paisagem ou Tablets em modo retrato
+md: 768px,    //Tablets em modo paisagem
+lg: 992px,    //Desktops
+xl: 1200px,   //Desktops com alta definição HD e FHD
+xxl: 2000px   //Desktops com ultra alta definição QHD e UHD
+*/
 
 /* Configurações Inicial dispositivos pequenos */
 @media only screen
 {
-    header{
-        width: 100vw;
-        height: 105px;
-        background-color: black;
-        color: white;
+    header {
+        background-color: $black;
+        height: 50px;
         display: flex;
         flex-direction: row;
-    
-        img{
-            height: 60px;
-            width: 70px;
-            margin-top: 35px;
-            margin-left: 10px;
-        }
-    
-        nav{
-            width: 100vw;
+        justify-content: space-between;
+        align-items: flex-start;
+        img {
+            width: 100px;
             height: 100px;
+        }
+        nav {
             display: flex;
-            flex-direction: row-reverse;
-            align-items: center;
-
-        justify-content: space-evenly;
-
-            ul{
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-end;
+            height: 50px;
+            button {
+                width: 50px;
+                height: 50px;
+                background-color: transparent;
+                color: $white;
+                font-size: 30px;
+                border: 0;
+            }
+            ul {
                 display: flex;
-                flex-direction: row;
-                gap: 5px;
-                align-items: center;
-        
-                li{
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                background-color: $black;
+                visibility: hidden;
+                li {
                     list-style: none;
-                    a{
-                        font-size: 1.2rem;
+                    a {
                         color: white;
                         text-decoration: none;
+                        padding: 10px;
+                        line-height: 30px;
                     }
                 }
             }
         }
     }
-    
-    .home{
-        background-color: rgb(171, 196, 196);
-        width: 100vw;
-        height: 50vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+}
 
-        p{
-            font-size: 1.5rem;
+//Tablets em modo paisagem ou maior 
+@media (min-width: 768px ) {
+    header {
+        height: 80px;
+        img {
+            width: 160px;
+            height: 160px;
         }
-
-    }
-
-    .html5
-    {
-        background-color: rgb(235, 139, 15);
-        width: 100vw;
-        height: 50vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        .img{
-            height: 50px;
-            width: 50px;
-            margin-top: 10px;
-            margin-bottom: 10px;
-        }
-
-        p{
-            font-size: 1.5rem;
-        }
-    }
-    
-    .css3
-    {
-        background-color: rgb(35, 120, 216);
-        width: 100vw;
-        height: 50vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        .img{
-            height: 50px;
-            width: 50px;
-            margin-top: 10px;
-            margin-bottom: 10px;
-        }
-        p{
-            font-size: 1.5rem;
-        }
-    }
-
-    .jS
-    {
-        background-color: rgb(220, 255, 20);
-        width: 100vw;
-        height: 50vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        img{
-            height: 50px;
-            width: 50px;
-            margin-top: 10px;
-            margin-bottom: 10px;
-        }
-        p{
-            font-size: 1.5rem;
-        }
-    }
-
-
-    .links{
-        width: 100vw;
-        height: 50vh;
-        display: flex;
-        flex-direction: column;
-
-        img{
-            height: 50px;
-            width: 50px;
-            margin-top: 10px;
-            margin-bottom: 10px;
-        }
-
-        p{
-            font-size: 1.5rem;
-        }
-
-    }
-
-    .footer{
-        width: 100vw;
-        height: 10vh;
-        background-color: black;
-        color: #ffff;
-    
-
-        p{
-            font-size: 1.2rem;
-        }
-
+        nav {
+            height: 80px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            button {
+                display: none;
+            }
+            ul {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: flex-start;
+                visibility: visible;
+            }
+        }  
     }
 }
 
-/*Tablet e dispostivos até 900px*/
-@media only screen and(min-width: 600px)
-{
-    header
-    {
-        background-color: red;
-    }
+section {
+    height: 70vh;
 }
 
-/* Computador */
-@media only screen and (min-width: 1200px)
-{
-    header
-    {
-        background-color: blue;
-    }
+#HTML5 {
+    background-color: $htmlColor2;
 }
 
-/* Smart TV */
-@media only screen and (min-width: 1800px) 
-{
-    header
-    {
-        background-color: rgb(92, 7, 35);
-    }
+#CSS3 {
+    background-color: $cssColor2;
+}
+
+#JS {
+    background-color: $jsColor2;
 }
