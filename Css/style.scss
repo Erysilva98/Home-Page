@@ -8,12 +8,12 @@ $jsColor1: #e5a228;
 $jsColor2: #f1bf26;
 $black: #111111;
 $white: #ffffff;
-
+$grey: #a5a4a4;
 
 *{
     padding: 0;
     margin: 0;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 /*
@@ -72,9 +72,174 @@ xxl: 2000px   //Desktops com ultra alta definição QHD e UHD
             }
         }
     }
+
+    main{
+        height: 75vh;
+        background-color: $grey;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        h1{                       
+            p{
+                font-size: 1.5rem;
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .html5{
+                font-size: 1.5rem;
+                color: $htmlColor1;
+            }
+            .css3{
+                font-size: 1.5rem;
+                color: $cssColor1;
+            }
+            .js{
+                font-size: 1.5rem;
+                color: $jsColor1;
+            }
+        }
+
+        h3{   
+            margin-top: 1.8rem;
+            flex-direction: column;
+
+            .html5{
+                color: $htmlColor1;
+            }
+            .css3{
+                color: $cssColor1;
+            }    
+            .js{
+                color: $jsColor1;
+            }
+        }
+    }
+
+
+    // Padrão de Logotipo das Seções
+    .logo-css{
+        height: 75px;
+        width: 75px;
+    }
+
+    // Padrão de Botoẽs das Seções
+    .btn-css{
+        height: 40px;
+        width: 140px;
+        background-color: $black;
+        color: $white;
+        border-radius: 40px;
+        font-size: 1.3rem;
+    }
+
+    // Alterar o Ponteiro
+    .btn-css :hover{
+        cursor: pointer;
+    }
+
+    #html5{
+        background-color: $htmlColor2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+
+        h2{
+            margin-top: 1.2rem;
+            font-size: 1.5rem;
+        }
+        h3{
+            margin-top: 1.2rem;
+        }
+        p{
+            margin: 1.2rem;
+            font-size: 1.2rem;
+        }
+    }
+
+    #css3{
+        background-color: $cssColor2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+
+        h2{
+            margin-top: 1.2rem;
+            font-size: 1.5rem;
+        }
+        h3{
+            margin-top: 1.2rem;
+        }
+        p{
+            margin: 1.2rem;
+            font-size: 1.2rem;
+        }
+    }
+
+    #js{
+        background-color: $jsColor2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+
+        h2{
+            margin-top: 1.2rem;
+            font-size: 1.5rem;
+        }
+        h3{
+            margin-top: 1.2rem;
+            margin: 1.2rem;
+        }
+        p{
+            margin: 1.2rem;
+            font-size: 1.2rem;
+        }
+    }
+
+    // Padrão de Icones da Seção Links
+    .icons-css{
+        margin: 0.8rem;
+        height: 35px;
+        width: 35px;
+        justify-content: center;
+    }
+
+    .links{
+        display: flex;
+        flex-direction: column;
+
+
+        p{
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: center;
+        }
+    }
+
+    .footer{
+        height: 50px;
+        background-color: $black;
+        color: $white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    // Altura de visão das Seções padrão
+    section {
+        height: 70vh;
+    }
 }
 
-//Tablets em modo paisagem ou maior 
+// Dispositivos Menores que 768px
 @media (min-width: 768px ) {
     header {
         height: 80px;
@@ -102,18 +267,4 @@ xxl: 2000px   //Desktops com ultra alta definição QHD e UHD
     }
 }
 
-section {
-    height: 70vh;
-}
 
-#HTML5 {
-    background-color: $htmlColor2;
-}
-
-#CSS3 {
-    background-color: $cssColor2;
-}
-
-#JS {
-    background-color: $jsColor2;
-}
