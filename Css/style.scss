@@ -25,7 +25,7 @@ xl: 1200px,   //Desktops com alta definição HD e FHD
 xxl: 2000px   //Desktops com ultra alta definição QHD e UHD
 */
 
-/* Configurações Inicial dispositivos pequenos */
+/* Configurações Inicial dispositivos Celular */
 @media only screen
 {
     header {
@@ -149,14 +149,14 @@ xxl: 2000px   //Desktops com ultra alta definição QHD e UHD
         
 
         h2{
-            margin-top: 1.2rem;
+            margin-top: .8rem;
             font-size: 1.5rem;
         }
         h3{
-            margin-top: 1.2rem;
+            margin-top: .8rem;
         }
         p{
-            margin: 1.2rem;
+            margin: .8rem;
             font-size: 1.2rem;
         }
     }
@@ -215,32 +215,71 @@ xxl: 2000px   //Desktops com ultra alta definição QHD e UHD
     .links{
         display: flex;
         flex-direction: column;
+        height: 400px;
+        
+        h2{
+            text-align: center;
+            margin-top: 1.5rem;
+            font-size: 1.5rem;
+        }
 
+        .container{
+            display: flex;
+            height: 80vh;
+            padding: 5px;
+            flex-direction: column;
 
-        p{
-            flex-direction: row;
-            align-items: flex-start;
-            justify-content: center;
+            h3{
+                margin-top: 1.5rem;
+                font-size: 1.5rem;
+                text-align: center;
+            }
+    
+            h4{
+                margin-top: 3rem;
+                font-size: 1.5rem;
+                text-align: center;
+            }
+    
+            h5{
+                font-size: 1.5rem;
+                text-align: center;
+            }
+
+            p{
+                font-size: 1.5rem;
+                font-weight: bolder;
+                line-height: 35px;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                
+           }
         }
     }
 
     .footer{
-        height: 50px;
+        height: 15vh;
         background-color: $black;
         color: $white;
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
     }
 
     // Altura de visão das Seções padrão
     section {
-        height: 70vh;
+        height: 80vh;
     }
 }
 
-// Dispositivos Menores que 768px
-@media (min-width: 768px ) {
+
+//  ????  Não Finalizado a Versão Desktop
+
+// Desktop  
+@media (min-width: 1200px ) {
     header {
         height: 80px;
         img {
@@ -262,8 +301,84 @@ xxl: 2000px   //Desktops com ultra alta definição QHD e UHD
                 justify-content: flex-start;
                 align-items: flex-start;
                 visibility: visible;
+                padding-right: 20px;
+                
+                a{
+                    font-size: 1.3rem;
+                }
             }
         }  
+    }
+
+    main{
+        h1{
+            display: flex;
+            flex-direction: row;
+            p{
+                font-size: 5rem;
+                .html5, .css3, .js{
+                    font-size: 5rem;
+                    padding: 10px;
+                }
+            }
+        }
+
+        h3{
+            display: flex;
+            align-content: space-around;
+            p{
+                font-size: 3rem;
+                .html5, .css3, .js{
+                    font-size: 3rem;
+                }
+            }
+        }
+    }
+
+    // Padrão de Logotipo das Seções
+    .logo-css{
+        height: 75px;
+        width: 75px;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    // Padrão de Botoẽs das Seções
+    .btn-css{
+        height: 40px;
+        width: 140px;
+        background-color: $black;
+        color: $white;
+        border-radius: 40px;
+        font-size: 1.3rem;
+    }
+
+    // Alterar o Ponteiro
+    .btn-css :hover{
+        cursor: pointer;
+    }
+
+    #html5, #css3, #js{
+        display: flex;  
+
+        h2{
+            margin-top: .8rem;
+            font-size: 2.5rem;
+        }
+        h3{
+            margin-top: .8rem;
+            font-size: 2rem;
+        }
+        p{
+            margin: 1.2rem;
+            font-size: 2.5rem;
+        }
+    }
+
+
+    // Altura de visão das Seções padrão
+    section {
+        height: 90vh;
     }
 }
 

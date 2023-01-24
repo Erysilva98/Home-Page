@@ -13,7 +13,7 @@ lg: 992px,    //Desktops
 xl: 1200px,   //Desktops com alta definição HD e FHD
 xxl: 2000px   //Desktops com ultra alta definição QHD e UHD
 */
-/* Configurações Inicial dispositivos pequenos */
+/* Configurações Inicial dispositivos Celular */
 @media only screen {
   header {
     background-color: #111111;
@@ -120,14 +120,14 @@ xxl: 2000px   //Desktops com ultra alta definição QHD e UHD
     justify-content: center;
   }
   #html5 h2 {
-    margin-top: 1.2rem;
+    margin-top: 0.8rem;
     font-size: 1.5rem;
   }
   #html5 h3 {
-    margin-top: 1.2rem;
+    margin-top: 0.8rem;
   }
   #html5 p {
-    margin: 1.2rem;
+    margin: 0.8rem;
     font-size: 1.2rem;
   }
   #css3 {
@@ -176,25 +176,56 @@ xxl: 2000px   //Desktops com ultra alta definição QHD e UHD
   .links {
     display: flex;
     flex-direction: column;
+    height: 400px;
   }
-  .links p {
+  .links h2 {
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+  }
+  .links .container {
+    display: flex;
+    height: 80vh;
+    padding: 5px;
+    flex-direction: column;
+  }
+  .links .container h3 {
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .links .container h4 {
+    margin-top: 3rem;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .links .container h5 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .links .container p {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    line-height: 35px;
+    display: flex;
     flex-direction: row;
-    align-items: flex-start;
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: center;
   }
   .footer {
-    height: 50px;
+    height: 15vh;
     background-color: #111111;
     color: #ffffff;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
   }
   section {
-    height: 70vh;
+    height: 80vh;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   header {
     height: 80px;
   }
@@ -218,5 +249,65 @@ xxl: 2000px   //Desktops com ultra alta definição QHD e UHD
     justify-content: flex-start;
     align-items: flex-start;
     visibility: visible;
+    padding-right: 20px;
+  }
+  header nav ul a {
+    font-size: 1.3rem;
+  }
+  main h1 {
+    display: flex;
+    flex-direction: row;
+  }
+  main h1 p {
+    font-size: 5rem;
+  }
+  main h1 p .html5, main h1 p .css3, main h1 p .js {
+    font-size: 5rem;
+    padding: 10px;
+  }
+  main h3 {
+    display: flex;
+    align-content: space-around;
+  }
+  main h3 p {
+    font-size: 3rem;
+  }
+  main h3 p .html5, main h3 p .css3, main h3 p .js {
+    font-size: 3rem;
+  }
+  .logo-css {
+    height: 75px;
+    width: 75px;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .btn-css {
+    height: 40px;
+    width: 140px;
+    background-color: #111111;
+    color: #ffffff;
+    border-radius: 40px;
+    font-size: 1.3rem;
+  }
+  .btn-css :hover {
+    cursor: pointer;
+  }
+  #html5, #css3, #js {
+    display: flex;
+  }
+  #html5 h2, #css3 h2, #js h2 {
+    margin-top: 0.8rem;
+    font-size: 2.5rem;
+  }
+  #html5 h3, #css3 h3, #js h3 {
+    margin-top: 0.8rem;
+    font-size: 2rem;
+  }
+  #html5 p, #css3 p, #js p {
+    margin: 1.2rem;
+    font-size: 2.5rem;
+  }
+  section {
+    height: 90vh;
   }
 }/*# sourceMappingURL=style.css.map */
